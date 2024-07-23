@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicación de Matrices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Multiplicación de Matrices</h1>
+            <nav>
+                <ul>
+                    <li><a href="#definiciones">Definiciones</a></li>
+                    <li><a href="#formulas">Fórmulas</a></li>
+                    <li><a href="#propiedades">Propiedades</a></li>
+                    <li><a href="#imagenes">Imágenes</a></li>
+                    <li><a href="#ejercicios">Ejercicios</a></li>
+                    <li><a href="#ingresar-ejercicios">Ingresar Ejercicios</a></li>
+                    <li><a href="#ayuda">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="definiciones" class="section">
+            <div class="container">
+                <h2>Definiciones</h2>
+                <p>La multiplicación de matrices consiste en combinar linealmente dos o más matrices mediante la adición de sus elementos dependiendo de su situación dentro de la matriz origen respetando el orden de los factores. En otras palabras, la multiplicación de dos matrices es unificar las matrices en una sola matriz mediante la multiplicación y suma de los elementos de las filas y columnas de las matrices origen teniendo en cuenta el orden de los factores.</p>
+            </div>
+        </section>
+        <section id="formulas" class="section">
+            <div class="container">
+                <h2>Fórmulas</h2>
+                <p>Para matrices A (m x n) y B (n x p), el producto AB es una matriz C (m x p) donde cada elemento C<sub>ij</sub> es la suma de A<sub>ik</sub> * B<sub>kj</sub> para k = 1 a n.</p>
+            </div>
+        </section>
+        <section id="propiedades" class="section">
+            <div class="container">
+                <h2>Propiedades</h2>
+                <p>Propiedades de la multiplicación de matrices:</p>
+                <ul>
+                    <li><strong>Asociativa:</strong> A · (B · C) = (A · B) · C</li>
+                    <li><strong>Elemento neutro:</strong> A · I = A, donde I es la matriz identidad del mismo orden que la matriz A.</li>
+                    <li><strong>No es Conmutativa:</strong> A · B ≠ B · A</li>
+                    <li><strong>Distributiva del producto respecto de la suma:</strong> A · (B + C) = A · B + A · C</li>
+                </ul>
+            </div>
+        </section>
+        <section id="imagenes" class="section">
+            <div class="container">
+                <h2>Te lo explico con imágenes</h2>
+                <div class="image-step">
+                    <h3>Paso 1: Definición de las matrices</h3>
+                    <img src="imagen1.png" alt="Definición de las matrices">
+                </div>
+                <div class="image-step">
+                    <h3>Paso 2: Multiplicación de filas y columnas</h3>
+                    <img src="imagen2.png" alt="Multiplicación de filas y columnas">
+                </div>
+                <div class="image-step">
+                    <h3>Paso 3: Suma de productos</h3>
+                    <img src="imagen3.png" alt="Suma de productos">
+                </div>
+                <div class="image-step">
+                    <h3>Fórmula General</h3>
+                    <img src="imagen4.png" alt="Fórmula General">
+                </div>
+            </div>
+        </section>
+        <section id="ejercicios" class="section">
+            <div class="container">
+                <h2>Ejercicios</h2>
+                <p>Prueba con algunos ejercicios de ejemplo:</p>
+                <pre>Ejemplo: A = [[1, -2], [3, 7]] y B = [[5, 6], [7, 8]]</pre>
+                <pre>Ejemplo: A = [[2, -8], [4, 2]] y B = [[2, 1], [5, 7]]</pre>
+                <pre>Ejemplo: A = [[3, -7], [5, -7]] y B = [[7, 5], [-5, 4]]</pre>
+                <pre>Ejemplo: A = [[4, 2], [6, -4]] y B = [[-4, 6], [2, 6]]</pre>
+            </div>
+        </section>
+        <section id="ingresar-ejercicios" class="section">
+            <div class="container">
+                <h2>Ingresa tus Ejercicios</h2>
+                <form id="matrix-form">
+                    <label for="matrixA">Matriz A:</label>
+                    <textarea id="matrixA" rows="4" cols="20"></textarea><br>
+                    <label for="matrixB">Matriz B:</label>
+                    <textarea id="matrixB" rows="4" cols="20"></textarea><br>
+                    <button type="button" onclick="multiplyMatrices()">Multiplicar</button>
+                </form>
+                <h3>Resultado:</h3>
+                <pre id="resultado"></pre>
+            </div>
+        </section>
+        <section id="ayuda" class="section">
+            <div class="container">
+                <h2>Ayuda</h2>
+                <p>Si necesitas más ayuda, visita los siguientes enlaces:</p>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=_4B0xC_6osc" target="_blank">Tutorial de multiplicación de matrices 1</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=OSJskXc7ef8" target="_blank">Tutorial de multiplicación de matrices 2</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=CM7LZ5QFR-Y" target="_blank">Multiplicación de matrices paso a paso</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=AKluWBr9XQo" target="_blank">Ejemplos de multiplicación de matrices</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=NdTMy2bLO6k" target="_blank">Explicación de multiplicación de matrices</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Multiplicación de Matrices</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
